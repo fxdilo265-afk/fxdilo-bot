@@ -1,0 +1,13 @@
+services:
+  - type: web
+    name: fxdilo-bot
+    runtime: python
+    buildCommand: pip install -r requirements.txt
+    startCommand: python bot.py
+    envVars:
+      - key: BOT_TOKEN
+        value: YOUR_NEW_TOKEN_HERE
+      - key: CHANNEL
+        value: "@xdilo1"
+      - key: WEBHOOK_SECRET
+        value: fxdilo2024
